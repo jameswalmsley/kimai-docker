@@ -1,0 +1,12 @@
+#docker run -d --name=kimai-dev -p10081:80 -v /srv/docker/kimai-dev:/var/lib/mysql kimai:j
+
+version: '2'
+services:
+  kimai:
+    image: kimai:j
+    container_name: kimai-dev
+    ports:
+      - "10081:80"
+    volumes:
+      - /srv/docker/kimai-dev:/var/lib/mysql
+
