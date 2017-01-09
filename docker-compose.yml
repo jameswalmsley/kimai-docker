@@ -6,7 +6,7 @@ services:
     image: kimai:j
     container_name: kimai-dev
     ports:
-      - "10081:80"
+      - "10080:80"
     volumes:
       - /srv/docker/kimai-dev:/var/lib/mysql
 
